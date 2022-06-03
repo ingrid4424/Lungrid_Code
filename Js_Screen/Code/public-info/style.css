@@ -1,0 +1,73 @@
+body{
+    width: 100%;
+    height: 60vh;
+    background-image: url('./Questionary.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    padding-top: 200px ;
+}
+
+form{
+    margin-top: 150px;
+}
+
+label{
+    display: block;
+}
+input, select{
+    height: 30px;
+    padding: 1%;
+    background-color: #D9D9D9;
+    border: none;
+    margin-bottom: 20px;
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    position: relative;
+    background-color: #D9D9D9;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #FF151E;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    position: relative;
+    background-color: #FF151E;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+.likert ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.likert li
+{
+    float: left;
+    text-align: left;
+    list-style-type: none;
+}
+
+input[type=submit]{
+    background-color: #FF151E;
+    font-size: 20px;
+    color: #D9D9D9;
+    width: 150px;
+    height: 40px;
+}

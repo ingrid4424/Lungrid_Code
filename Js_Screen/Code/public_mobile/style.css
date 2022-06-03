@@ -1,0 +1,54 @@
+#Root{
+    width:100vw;
+    height:100vh;
+}
+
+body{
+    position: relative;
+}
+
+.controls-container{
+    width:100vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#btn_putName{
+    background: #E52B32;
+    border: none;
+    color: #FAFAFA;
+    margin: 30px;
+    width: 80%;
+    height: 30px;
+    position: absolute;
+    left: 00%;
+    bottom: 250px;
+}
+
+#btn_startName{
+    background: #E52B32;
+    border: none;
+    color: #FAFAFA;
+    margin: 30px;
+    width: 80%;
+    height: 30px;
+}
+
+.p5Canvas{
+    position: fixed !important;
+    left: 0;
+    top:0;
+    z-index: -1;
+}
+
+#input_name{
+    margin: 30px;
+    background: #FFFFFF;
+    width: 80%;
+    height: 30px;
+    border-radius: 10.8245px;
+    border: none;
+    box-shadow: 1px 1px 10px black;
+
+}

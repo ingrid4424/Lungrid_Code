@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="createUser">
+        <label for=""><strong>Email</strong></label>
+        <input type="text" name="email" placeholder="Email">
+        <label for=""><strong>Age</strong></label>
+        <input type="number" name="age" placeholder="Age"/>
+        <label for=""><strong>Category</strong></label>
+        <select name="gender">
+            <option value="man">Man</option>
+            <option value="woman">woman</option>
+        </select>
+        <label for=""><strong>Level of Satisfaction</strong></label>
+        <ul class="likert">
+            <li class="likert"> Bad Satisfaction <input id="radGuiltyStart" type="radio" name="levelSatisfaction" value="1" />
+            <li class="likert"><input type="radio" name="levelSatisfaction" value="2" />
+            <li class="likert"><input type="radio" name="levelSatisfaction" value="3" />
+            <li class="likert"><input type="radio" name="levelSatisfaction" value="4" />
+            <li class="likert"><input id="radGuiltyEnd" type="radio" name="levelSatisfaction" value="5" />  Good Satisfaction
+        </ul>
+        <label for=""><strong>Level of Atractive</strong></label>
+        <ul class="likert">
+            <li class="likert"> Bad Satisfaction <input id="radGuiltyStart" type="radio" name="levelAtractive" value="1" />
+            <li class="likert"><input type="radio" name="levelAtractive" value="2" />
+            <li class="likert"><input type="radio" name="levelAtractive" value="3" />
+            <li class="likert"><input type="radio" name="levelAtractive" value="4" />
+            <li class="likert"><input id="radGuiltyEnd" type="radio" name="levelAtractive" value="5" />  Good Satisfaction
+        </ul>
+        <input type="submit" name="Submit">
+    </form>
+    <script src="https://cdn.socket.io/4.4.1/socket.io.min.js"
+    integrity="sha384-fKnu0iswBIqkjxrhQCTZ7qlLHOFEgNkRmK2vaO/LbTZSXdJfAu6ewRBdwHPhBo/H" crossorigin="anonymous">
+</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
+    <script src="./sketch.js" type="module" ></script>
+</body>
+</html>
